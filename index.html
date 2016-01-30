@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="infiniteScroll">
+<head>
+    <title>infinite scroll</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="infiniteScrollController.js"></script>
+    <script src="infinite-scroll.directive.js"></script>
+    <style>
+        #scrolling-container {
+            height: 400px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div id="scrolling-container">
+    <div ng-controller="studentsController as vm"
+         infinite-scroll="scrolling-container"
+         load-more='vm.loadOnScroll()' 
+         threshold="100">
+        <div data-ng-repeat="student in vm.studentList">
+            Name : {{student.name}} - Email : {{student.email}}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
