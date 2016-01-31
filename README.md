@@ -1,7 +1,7 @@
 # InfiniteScroll
 This is directive of AngularJS 1.
 
-It is vary simple and light
+It is vary simple and lite
 
 ### You Can See [Demo] form here
 ### Version
