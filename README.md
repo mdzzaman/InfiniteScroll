@@ -16,7 +16,7 @@ infinite-scroll.directive.js
 ### Configuration
 Add these property to the container
 ```
-infinite-scroll="scrolling-container" // scrolling container which container will be scroll
+infinite-scroll="scrolling-container" // "scrolling-container" is id of container(div) will be scroll
 load-more='vm.loadOnScroll()' // function call when scroll
 threshold="100" // when 100px remain then load-more function will be call
 ```
