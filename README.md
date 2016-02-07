@@ -1,5 +1,5 @@
 # InfiniteScroll
-This is directive of AngularJS 1.
+This is directive of AngularJS 1.x.x.
 
 It is vary simple and lite
 
